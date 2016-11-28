@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salary thing</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1> Employee Salary Page </h1>
+  <div class="inpootis">
+    <input type="text" id="name" value="" placeholder="Name"></input>
+    <input type="text" id="lastName" value="" placeholder="Last name"></input>
+    <input type="text" id="idNumber" value="" placeholder="Employee ID"></input>
+    <input type="text" id="title" value="" placeholder="Job Title"></input>
+    <input type="text" id="salary" value=""placeholder="Annual Salary"></input>
+    <button type="button" id="submit" onclick="getThtInfo()">Submit</button>
+    <!-- <button type="button" id="submit" onclick="addTable()">Table test</button> -->
+    <button type="button" id=clear onclick="clearAll()">Clear it</button>
+  </div>
+  <div class="pThings">
+<p>Total we're paying these people per month: </p><p id="totalPay"></p>
+</div>
+  <table border="6" id="theTable">
+    <!-- New rows go here -->
+    <tr>
+          <td>First Name</td>
+          <td>Last name</td>
+          <td>Employee ID</td>
+          <td>Employee Title</td>
+          <td>Annual Employee Salary</td>
+        </tr>
+  </table>
+
+  </body>
+</html>
