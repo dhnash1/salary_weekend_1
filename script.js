@@ -4,8 +4,6 @@ var lastArr = [];
 var idArr = [];
 var titleArr = [];
 var salaryArr = [];
-
-
 //fetch and clear stuff
 function getThtInfo(){
   var first = document.getElementById('name').value;
@@ -21,9 +19,8 @@ function getThtInfo(){
     alert(salString + " isn't a proper salary! Please try again.");
     document.getElementById('salary').value = "";
     return salary;
-  }
-   else{
-     //put the info into the corresponding arrays
+} else{
+    //put the info into the corresponding arrays
     firstArr.push(first);
     lastArr.push(last);
     idArr.push(id);
@@ -57,7 +54,6 @@ function addTable(){
           cell4.innerHTML = titleArr[i];
           cell5.innerHTML = salaryArr[i];
   }
-
 }
 //empty the table before re-filling it
 function clearTable(){
@@ -73,7 +69,6 @@ function arithmetic(){
       }
     //console.log(total);
     document.getElementById('totalPay').innerHTML = total;
-
 }
 //empty the table and arrays
 function clearAll(){
@@ -84,5 +79,4 @@ function clearAll(){
    titleArr = [];
    salaryArr = [];
    document.getElementById('totalPay').innerHTML = "";
-
 }

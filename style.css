@@ -1,3 +1,9 @@
+body{
+  background-color: teal;
+}
+table{
+  background-color: lightgrey;
+}
 h1{
   width: 30%;
   margin: 2px auto;
@@ -14,6 +20,8 @@ table{
 }
 
 .pThings{
-  width: 30%;
+  border: solid black 5px;
+  width: 25%;
   margin: 5px auto;
+  background-color: white;
 }
